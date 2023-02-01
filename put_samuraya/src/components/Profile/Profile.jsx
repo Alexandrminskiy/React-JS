@@ -1,17 +1,12 @@
 import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.css'
+import Profileinfo from './Profileinfo/Profileinfo';
 
 const Profile = () => {
     return (
         <div>
-            <div>
-                <img src='http://images.singletracks.com/blog/wp-content/uploads/2016/09/Picture-10.jpg'></img>
-            </div>
-            <div>
-                ava + description
-            </div>
-      
-        <MyPosts />
+            <Profileinfo />
+            <MyPosts />
         </div>
     )
 }
