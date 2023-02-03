@@ -3,11 +3,9 @@ import s from './MyPosts.module.css'
 import Post from "./Post/Post";
 
 const MyPosts = (props) => {
-
-    let postDate = [
-        { id: 1, message: 'привет как дела ?', likesCount: 12},
-        { id: 2, message: 'какая хорошая погода сегодня?', likesCount: 11},
-    ]
+debugger;
+    let postsElements =
+        props.posts.map(el => <Post message={el.message} likesCount={el.likesCount} />);
 
     return (
         <div className={s.postsBlock}>
@@ -22,8 +20,7 @@ const MyPosts = (props) => {
                 <hr />
             </div>
             <div className={s.posts}>
-                <Post message={postDate[0].message} likesCount={postDate[0].likesCount}/>
-                <Post message={postDate[1].message} likesCount={postDate[1].likesCount}/>
+                {postsElements}
             </div>
         </div>
     )
