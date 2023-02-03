@@ -25,5 +25,6 @@ const App = (props) => {
 export default App;
 
 // Урок 20 123
+// урок 14 минут
 {/* <Route path="/dialogs/*" element= {<Dialogs dialogsData = {props.dialogsData} messagesData = {props.messagesData} />}/>
  <Route path="/profile" element= { <Profile postsData = {props.postsData} />} /> */}
